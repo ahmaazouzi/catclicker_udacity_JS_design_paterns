@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cat clicker</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id='lefto'><h1>Ahlam's Cats:</h1></div>
+<div id='righto'>
+	<div id='cont'>
+	</div>
+</div>
+<script type="text/javascript">
+var arraya = ['jon.jpg','bon.jpg','mon.jpg','lon.jpg','hon.jpg']
+var ul = document.createElement('ul');
+var left = document.getElementById('lefto');
+left.appendChild(ul);
+var numbero = document.createElement('div');
+count = 0;
+var n = 1;
+for (i in arraya){
+	var cat = arraya[i];
+	var num = document.createElement('h2')
+	var namo = document.createElement('h1');
+	namo.innerHTML = '<h3>'+ cat.slice(0,-4) +'</h3>'
+	var imaga = document.createElement('img');
+	imaga.src = cat;
+	var cont = document.getElementById('cont');
+	imaga.addEventListener('click', (function(numCopy) {
+    return function() {
+    	numCopy = numCopy + 1;
+        var number = document.createElement('h2');
+        number.textContent = numCopy;
+        while (numbero.firstChild){
+        	numbero.removeChild(numbero.firstChild);
+        }
+        numbero.appendChild(number);
+        cont.appendChild(numbero);
+    };
+	})(count));
+	var name = 'cat';
+	var li = document.createElement('li');
+	var button = document.createElement('button');
+	button.innerHTML = name + n;
+	ul.appendChild(li)
+	li.appendChild(button)
+	button.onclick = (function(namoCopy, imagaCopy) {
+    	return function() {
+        	while (cont.firstChild){
+    		cont.removeChild(cont.firstChild)};
+		cont.appendChild(namoCopy);
+        cont.appendChild(imagaCopy);
+        };
+		})(namo, imaga);
+		n++;
+};
+</script>
+</body>
+</html>

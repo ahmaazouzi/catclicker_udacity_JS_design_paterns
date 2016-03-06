@@ -1,25 +1,25 @@
 body {
 	background-color: lightgray;
-	padding: 70px;
+	padding: 2%;
 	font-family: 'helvetica neue';
 	line-height: 250%;
 }
 
 #lefto {
 	background-color: white;
-	width: 34%;
+	width: 15%;
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 15px;
+	padding: 2%;
 }
 
 #righto {
 	background-color: white;
-	width: 54%;
+	width: 55%;
 	float: right;
-	padding: 15px;
-	height: 700px;
+	padding: 2%;
+	height: 100%;
 }
 
 #cont {
@@ -33,10 +33,21 @@ img {
 }
 button {
 	background-color:lightbrown;
-	font-size: 2em;
-	width: 5em;
+	font-size: 100%;
+	width: 50%;
 	color: darkbrown;
 	box-shadow: 20px;
 }
+
+@media screen and (maz-width: 480px) {
+    li {
+        display: inline-block;
+    }
+}
+
+#clicklar {
+	float: right;
+}
+
 
 

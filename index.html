@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>  
+<html ng-app='app1'>
+<head>
+	<title>cat clicker</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller='iterata'>
+<div id='lefto'><h1>Our Cats:</h1>
+	<ul>
+		<li ng-repeat='cat in list'>
+			<button type="button" ng-click="list[imaga]=cat" ng-init="list[imaga]=list[0]">{{cat.name}}</button>
+		</li>
+	</ul>
+</div>
+ <div id='righto'>
+ 	<h2>{{list[imaga].name}}<span style='float:right'>{{list[imaga].count}} clicks</span></h2>
+ 	<img ng-click='updateValue(list[imaga])' src= {{list[imaga].source}}>
+</div>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

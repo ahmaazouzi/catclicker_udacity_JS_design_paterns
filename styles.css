@@ -7,7 +7,7 @@ body {
 
 #lefto {
 	background-color: white;
-	width: 15%;
+	width: 25%;
 	float: left;
 	margin-right: auto;
 	margin-left: auto;
@@ -16,9 +16,9 @@ body {
 
 #righto {
 	background-color: white;
-	width: 55%;
+	width: 63%;
 	float: right;
-	padding: 2%;
+	padding:  0 2%;
 	height: 100%;
 }
 
@@ -30,11 +30,14 @@ li {
 }
 img {
 	width:100%;
+	height: 100%;
+	overflow: scroll;
 }
 button {
 	background-color:lightbrown;
 	font-size: 100%;
-	width: 50%;
+	width: 75%;
+	height: 50px;
 	color: darkbrown;
 	box-shadow: 20px;
 }
@@ -45,8 +48,9 @@ button {
     }
 }
 
-#clicklar {
-	float: right;
+#clicklar: {
+	float: left;
+	width: 20%
 }
 
 
